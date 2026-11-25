@@ -1,0 +1,5 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="Build"><Exec Command="pwsh.exe -NoProfile -File &quot;$(MSBuildThisFileDirectory)scripts\build.ps1&quot;"/></Target>
+  <Target Name="Test"><Exec Command="pwsh.exe -NoProfile -File &quot;$(MSBuildThisFileDirectory)scripts\build.ps1&quot; -Test"/></Target>
+  <Target Name="Release"><Exec Command="pwsh.exe -NoProfile -File &quot;$(MSBuildThisFileDirectory)scripts\build.ps1&quot; -Test -Installer"/></Target>
+</Project>

@@ -1,0 +1,12 @@
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{FF8D8F27-05C3-4EFA-8588-9F62DFBE5D5D}</ProjectGuid>
+    <OutputType>WinExe</OutputType><AssemblyName>Hepta</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion><PlatformTarget>x64</PlatformTarget>
+    <OutputPath>build\</OutputPath><RootNamespace>Hepta</RootNamespace>
+    <StartAction>Program</StartAction><StartProgram>$(MSBuildProjectDirectory)\build\Hepta.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup><Compile Include="src\*.cs"/><None Include="src\Hepta.manifest"/><None Include="assets\lang\*.json"/><None Include="scripts\*.ps1"/></ItemGroup>
+  <Import Project="Hepta.proj"/>
+  <Target Name="Rebuild" DependsOnTargets="Build"/>
+</Project>
