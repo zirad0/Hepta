@@ -1,0 +1,11 @@
+/build/
+/release/
+/bin/
+/obj/
+.vs/
+*.user
+*.suo
+*.log
+settings.json
+history.json
+pending.json
